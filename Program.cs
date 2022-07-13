@@ -67,7 +67,7 @@ else
 int current = 2;
 string check;
 int num;
-Console.Write("введите целое положительное числоили  ");
+Console.Write("введите целое положительное число  ");
 check = Console.ReadLine();
     {
         num = Convert.ToInt32(check);
@@ -79,3 +79,21 @@ check = Console.ReadLine();
         }
     }
     */
+
+// еще один способ решение последней задачи на нахождения всех четных чисел числа N
+
+Console.WriteLine("введите четное чилсо ");
+int num = Convert.ToInt32(Console.ReadLine());
+int current = 2;
+
+while(current <= num)
+
+     if(current % 2 ==0)
+     {
+        Console.Write(current + " " );
+        current = current + 2;
+     }
+    if(num < 2)
+    {
+       Console.Write("вы ввели число меньше 2, четных положительных чисел в данном диапозоне нет");
+    }
