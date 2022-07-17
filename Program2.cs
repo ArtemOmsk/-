@@ -34,7 +34,7 @@ else Console.WriteLine($"заданное число {number}, третье чи
 
 // программа которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
 
-bool AWeek(int num, int error)
+bool AWeek(int num)
 {
 if (num > 5 ) return true;
     else return false;
